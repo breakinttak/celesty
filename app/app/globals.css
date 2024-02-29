@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.main{
+  box-shadow: -98px 66px 185px -37px rgba(168, 26, 149, 0.75) inset;
+-webkit-box-shadow: -18px 66px 185px -37px rgba(53, 3, 54, 0.75) inset;
+-moz-box-shadow: 98px 66px 185px -37px rgba(214, 93, 192, 0.75) inset;
+}
+
+.name{
+
+color: transparent;
+background: #666666;
+-webkit-background-clip: text;
+-moz-background-clip: text;
+background-clip: text;
+text-shadow: 0px 3px 3px rgba(255,255,255,0.5);
+}
+
+.name Image{
+  background-color: transparent;
+}
+
+.backInput{
+  box-shadow: -98px 66px 185px -37px rgba(160, 138, 157, 0.75) inset;
+  -webkit-box-shadow: -18px 66px 185px -37px rgba(236, 213, 236, 0.75) inset;
+-moz-box-shadow: 98px 66px 185px -37px rgba(97, 92, 96, 0.75) inset;
+  background-color: #978a8a;
+}
